@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guía de Hollow Knight | Contacto</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <style>
+        /* CSS INTERNO: solo el formulario */
+        form{
+            display:grid;
+            gap:12px;
+            max-width:500px;
+        }
+        label{
+            color:var(--color-geo);
+        }
+
+        input,select,textarea{
+            padding:8px;
+            border:1px solid var(--color-primary);
+            border-radius:6px;
+            background:#222c44;
+            color:var(--color-texto);
+            font:inherit;
+        }
+        button{
+            padding:10px;
+            border:0;
+            border-radius:6px;
+            background:var(--color-primary);
+            color:#0f1420;
+            font:inherit;
+            cursor:pointer;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1 style="letter-spacing:2px;">Guía de Hollow Knight</h1>
+        <p class="subtitulo">Sobrevivir en Hallownest, paso a paso</p>
+    </header>
+    <nav>
+        <a href="index.html"> Inicio </a>
+        <a href="Jefes.html"> Jefes</a>
+        <a class="activo" href="Contactos.html">Contacto</a>
+        <a href="https://hollowknight.fandom.com/" target="_blank" rel="noopener">Wiki</a>
+    </nav>
+    <main>
+        <section>
+            <h2>Contacto y sugerencias</h2>
+            <p>¿Falta un jefe o hay un dato incorrecto? Escríbelo aquí.</p>
+            <form action="#" method="get">
+                <label for="nombre">Nombre</label>
+                <input id="nombre" name="nombre" type="text" required>
+                <label for="correo">Correo</label>
+                <input id="correo" name="correo" type="email" required>
+                <label for="jefe">Jefe más difícil para ti</label>
+                <select id="jefe" name="jefe">
+                    <option>Hornet</option>
+                    <option>Señores Mantis</option>
+                    <option>Grimm</option>
+                    <option>Receptaculo Roto</option>
+                    <option>Señor Desleal</option>
+                    <option>Caballero Vigia</option>
+                    <option>Hollow Knight</option>
+                    <option>Radiance</option>
+                    <option>Otro</option>
+                </select>
+                <label for="mensaje">Mensaje</label>
+                <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+                <button type="submit">Enviar mensaje</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>Autoría: Jeremy Reyes Bohórquez</p>
+        <p><a href="https://www.hollowknight.com/" target="_blank" rel="noopener">Sitio de Team Cherry</a></p>
+    </footer>
+</body>
+</html>
